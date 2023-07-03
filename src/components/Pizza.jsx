@@ -5,7 +5,7 @@ function ListOfPizzas({pizzas}) {
       {pizzas.map((pizza, i) => (
         // eslint-disable-next-line react/jsx-key
         <div className={`pizza ${pizza.soldOut ? "sold-out" : ""}`} key={i}>
-          <img src={pizza.photoName} alt={pizza.name} />
+          <img src={`src/assets/pizzas/${pizza.photoName}`} alt={pizza.name} />
           <div>
             <h3>{pizza.name}</h3>
             <p>{pizza.ingredients}</p>
